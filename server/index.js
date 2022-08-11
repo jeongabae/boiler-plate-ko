@@ -25,6 +25,10 @@ app.get('/', (req, res) => { //루트 디렉터리에 오면 Hello World!가 출
   res.send('Hello World! by cleveryellowduck') 
 })
 
+app.get('/api/hello',(req,res) => {
+  res.send("안녕하세요!!!")
+})
+
 app.post('/api/users/register', (req, res) => { //회원가입을 위한 라우트
   //회원 가입 할때 필요한 정보들을 client에서 가져오면
   //그것들을 데이터 베이스에 넣어준다.
